@@ -1,0 +1,9 @@
+#!/bin/bash
+
+method="$1"
+shift;
+
+case $method in
+  get) python3 get_orders.py "$@";;
+  update) python3 update_orders.py "$@";;
+esac
